@@ -6,7 +6,7 @@
             sm="6"
             >
             <v-text-field
-                label="Filtrar Categorias"
+                label="Video ou Site"
                 outlined
                 v-model="search"
             ></v-text-field>
@@ -32,7 +32,7 @@
             <v-card-subtitle>
             {{ lista.descricao }}
             <v-spacer/>
-            <span><b>Categorias:</b></span> {{ lista.categoria }}
+            <span><b>Tipo:</b></span> {{ lista.tipo }}
             </v-card-subtitle>
 
             <v-card-actions>
@@ -90,7 +90,7 @@ export default {
             valores = this.listaIniciativas.filter((item) => {
                 return(
                     
-                    item.categoria[0].toLowerCase().indexOf(this.search.toLowerCase()) > -1
+                    item.tipo.toLowerCase().indexOf(this.search.toLowerCase()) > -1
                 );
             });
 
