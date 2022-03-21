@@ -3,6 +3,8 @@ import VueRouter from 'vue-router'
 import PaginaInicial from '../views/PaginaInicial.vue'
 import ListaGeral from '../views/ListaGeral.vue'
 import QuemSomos from '../views/QuemSomos.vue'
+import FaleConosco from '../views/FaleConosco.vue'
+import MensagemRecebida from '../views/MensagemRecebida.vue'
 
 Vue.use(VueRouter)
 
@@ -21,6 +23,16 @@ const routes = [
     path: '/QuemSomos',
     name: 'QuemSomos',
     component: QuemSomos
+  },
+  {
+    path: '/FaleConosco',
+    name: 'FaleConosco',
+    component: FaleConosco
+  },
+  {
+    path: '/MensagemRecebida',
+    name: 'MensagemRecebida',
+    component: MensagemRecebida
   }
 
 ]

@@ -6,7 +6,7 @@
             sm="6"
             >
             <v-text-field
-                label="Filtrar"
+                label="Filtrar Categorias"
                 outlined
                 v-model="search"
             ></v-text-field>
@@ -32,7 +32,7 @@
             <v-card-subtitle>
             {{ lista.descricao }}
             <v-spacer/>
-            <span><b>Preço:</b></span> {{ lista.categoria[0] }}
+            <span><b>Categorias:</b></span> {{ lista.categoria }}
             </v-card-subtitle>
 
             <v-card-actions>
@@ -40,7 +40,7 @@
                 color="orange lighten-2"
                 text
             >
-                Endereço
+                Link
             </v-btn>
 
             <v-spacer></v-spacer>
@@ -58,7 +58,7 @@
                 <v-divider></v-divider>
 
                 <v-card-text>
-                {{lista.link}}
+                    <a :href=" lista.link ">{{ lista.link }}</a>
                 </v-card-text>
             </div>
             </v-expand-transition>
@@ -90,7 +90,7 @@ export default {
             valores = this.listaIniciativas.filter((item) => {
                 return(
                     
-                    item.tipo.toLowerCase().indexOf(this.search.toLowerCase()) > -1
+                    item.categoria[0].toLowerCase().indexOf(this.search.toLowerCase()) > -1
                 );
             });
 

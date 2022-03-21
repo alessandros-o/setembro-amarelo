@@ -2,7 +2,7 @@
   <div class="home text-center ma-7">
     <h2 class="text-center mb-5">A campanha Setembro Amarelo® salva vidas!</h2>
     <img width="344" src="../assets/banner-set.png" alt="">
-    <p class="my-5">
+    <p width="344" class="my-5">
         Desde 2014, a Associação Brasileira de Psiquiatria – ABP, 
         em parceria com o Conselho Federal de Medicina – CFM, 
         organiza nacionalmente o Setembro Amarelo®. 
@@ -20,12 +20,12 @@
       <v-list-item three-line>
         <v-list-item-content>
           <div class="text-overline mb-4 white--text">
-            VÍDEOS
+            INFORMAÇÕES
           </div>
           <v-list-item-title class="text-h5 mb-1 white--text">
-              Assista
+              Sites, vídeos e mais
           </v-list-item-title>
-          <v-list-item-subtitle class="white--text">Veja nossa lista de vídeos que podem te ajudar.</v-list-item-subtitle>
+          <v-list-item-subtitle class="white--text">Veja nossa lista de sites, vídeos, artigos e canais de atendimento.</v-list-item-subtitle>
         </v-list-item-content>
 
         <v-list-item-avatar
@@ -36,7 +36,7 @@
       </v-list-item>
 
       <v-card-actions class="btn-inicio">
-        <router-link to="/ListaRevendedores">
+        <router-link to="/ListaGeral">
           <v-btn
             rounded
             color="orange accent-2"
@@ -61,64 +61,25 @@
             PODE FALAR
           </div>
           <v-list-item-title class="text-h5 mb-1 white--text">
-            Sou produtor
+            Fale conosco
           </v-list-item-title>
-          <v-list-item-subtitle class="white--text">Quero vender ovos de páscoa</v-list-item-subtitle>
+          <v-list-item-subtitle class="white--text">Deseja falar conosco ou ser parceiro da iniciativa?.</v-list-item-subtitle>
         </v-list-item-content>
 
         <v-list-item-avatar
           tile
           size="80"
-          color="grey"
-        ></v-list-item-avatar>
+        ><img src="../assets/mao-amarelo.jpg" alt=""></v-list-item-avatar>
       </v-list-item>
 
       <v-card-actions class="btn-inicio">
-        <router-link to="/CadastroNovos">
+        <router-link to="/FaleConosco">
           <v-btn
             rounded
             color="orange accent-2"
             dark
           >
-            Cadastrar
-          </v-btn>
-        </router-link>
-      </v-card-actions>
-    </v-card>
-
-     <v-card
-      class="card-inicio mx-auto"
-      max-width="344"
-      outlined
-      color="blue-grey darken-4"
-    >
-      <v-list-item three-line>
-        <v-list-item-content>
-          <div class="text-overline mb-4 white--text">
-            SITES
-          </div>
-          <v-list-item-title class="text-h5 mb-1 white--text">
-            Sou cliente
-          </v-list-item-title>
-          <v-list-item-subtitle class="white--text">Assista vídeos</v-list-item-subtitle>
-        </v-list-item-content>
-
-        <v-list-item-avatar
-          tile
-          size="80"
-          
-        ><img src="../assets/Esperanca.jpg" alt=""></v-list-item-avatar>
-      </v-list-item>
-
-      <v-card-actions class="btn-inicio">
-        <router-link to="/ListaRevendedores">
-          <v-btn
-            rounded
-            color="orange accent-2"
-            dark
-          
-          >
-            Buscar
+            CONTATO
           </v-btn>
         </router-link>
       </v-card-actions>
